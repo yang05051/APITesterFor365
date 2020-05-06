@@ -2,4 +2,4 @@
 
 Original project: https://github.com/wangziyingwen/AutoApiSecret
 
-Author: https://github.com/wangziyingwen
+Creator: https://github.com/wangziyingwen
