@@ -4,6 +4,6 @@
  
  >https://github.com/wangziyingwen/AutoApiSecret
 
- **Contributor:** 
+ **Contributor: +1** 
  
  >https://github.com/wangziyingwen
