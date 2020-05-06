@@ -1,3 +1,3 @@
 # AutoApiSecret
 
-This project is forked from: https://github.com/wangziyingwen/AutoApiSecret
+Original project: https://github.com/wangziyingwen/AutoApiSecret
