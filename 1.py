@@ -54,11 +54,11 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print("API 1 - Success')
+            print('API 1 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print("API 2 - Success')
+            print('API 2 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code == 200:
             num1+=1
             num2+=1
