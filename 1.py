@@ -84,6 +84,6 @@ def main():
         pass
 for _ in range(100):
     roundnum+=1
-    print('====== START ====== ('+roundnum+' / 100)')
+    print('====== START ====== ('+str(roundnum)+' / 100)')
     main()
-    print('======= END ======= ('+roundnum+' / 100)')
+    print('======= END ======= ('+str(roundnum)+' / 100)')
