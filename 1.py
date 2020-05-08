@@ -14,6 +14,7 @@ import json,sys,time
 
 path=sys.path[0]+r'/1.txt'
 num1 = 0
+roundnum = 0
 
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
@@ -36,6 +37,7 @@ def main():
     refresh_token = fo.read()
     fo.close()
     global num1
+    global roundnum
     localtime = time.asctime( time.localtime(time.time()) )
     access_token=gettoken(refresh_token)
     headers={
@@ -76,9 +78,12 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('API 10 - Success [Total success: '+str(num1)+']')
-            print('----- End ----- \nCurrent time of server: ', localtime+'\n---------------')
+            print('----------\nCurrent time of server: ', localtime+'')
     except:
         print("Pass")
         pass
 for _ in range(100):
+    roundnum+=1
+    print('====== START ====== ('+roundnum+' / 100)')
     main()
+    print('======= END ======= ('+roundnum+' / 100)')
