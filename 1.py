@@ -49,38 +49,37 @@ def main():
     try:
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
             num1+=1
-            print("API 1 - Success  [Total success: "+str(num1)+']')
+            print("API 1 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code == 200:
             num1+=1
-            print("API 2 - Success  [Total success: "+str(num1)+']')
+            print("API 2 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code == 200:
             num1+=1
-            print('API 3 - Success  [Total success: '+str(num1)+']')
+            print('API 3 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
             num1+=1
-            print('API 4 - Success  [Total success: '+str(num1)+']')
+            print('API 4 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
-            print('API 5 - Success  [Total success: '+str(num1)+']')    
+            print('API 5 - Success')    
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
-            print('API 6 - Success  [Total success: '+str(num1)+']')    
+            print('API 6 - Success')    
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
-            print('API 7 - Success  [Total success: '+str(num1)+']')
+            print('API 7 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
             num1+=1
-            print('API 8 - Success  [Total success: '+str(num1)+']')
+            print('API 8 - Success')
         if req.get(r'https://api.powerbi.com/v1.0/myorg/apps',headers=headers).status_code == 200:
             num1+=1
-            print('API 11 - Success [Total success: '+str(num1)+']') 
+            print('API 11 - Success') 
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
             num1+=1
-            print('API 9 - Success  [Total success: '+str(num1)+']')
+            print('API 9 - Success')
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
-            print('API 10 - Success [Total success: '+str(num1)+']')
-            print('Current time of server: ', localtime+'')
+            print('API 10 - Success')
     except:
         print("Pass")
         pass
@@ -88,4 +87,7 @@ for _ in range(totalroundnum):
     roundnum+=1
     print('\n=========== START ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ===========')
     main()
+    print('---------------')
+    print('Current time of server: ', localtime+'')
+    print('Total Success: '+str(num1))
     print('============ END ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ============\n')
