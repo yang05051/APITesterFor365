@@ -13,9 +13,9 @@ import json,sys,time
 
 
 path=sys.path[0]+r'/1.txt'
-num1 = 0
-roundnum = 0
-totalroundnum = 0
+global num1 = 0
+global roundnum = 0
+global totalroundnum = 0
 
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
