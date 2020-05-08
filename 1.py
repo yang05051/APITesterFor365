@@ -78,7 +78,7 @@ def main():
             print('API 10 - Success [Total success: '+str(num1)+']')
             print('----- End ----- \nCurrent time of server: ', localtime+'\n---------------')
     except:
-        print("Failed to run.")
+        print("Pass")
         pass
 for _ in range(100):
     main()
