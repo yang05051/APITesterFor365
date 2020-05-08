@@ -78,12 +78,12 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('API 10 - Success [Total success: '+str(num1)+']')
-            print('----------\nCurrent time of server: ', localtime+'')
+            print('\nCurrent time of server: ', localtime+'\n')
     except:
         print("Pass")
         pass
 for _ in range(100):
     roundnum+=1
-    print('====== START ====== ('+str(roundnum)+' / 100)')
+    print('\n\n=========== START ('+str(roundnum)+' / 100) ===========\n')
     main()
-    print('======= END ======= ('+str(roundnum)+' / 100)')
+    print('\n============ END ('+str(roundnum)+' / 100) ============\n\n')
