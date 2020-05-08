@@ -37,6 +37,9 @@ def main():
     fo = open(path, "r+")
     refresh_token = fo.read()
     fo.close()
+    global num1
+    global roundnum
+    global totalroundnum
     localtime = time.asctime( time.localtime(time.time()) )
     access_token=gettoken(refresh_token)
     headers={
