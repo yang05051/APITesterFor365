@@ -13,9 +13,9 @@ import json,sys,time
 
 
 path=sys.path[0]+r'/1.txt'
-global num1 = 0
-global roundnum = 0
-global totalroundnum = 0
+num1 = 0
+roundnum = 0
+totalroundnum = 0
 
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
@@ -34,6 +34,9 @@ def gettoken(refresh_token):
         f.write(refresh_token)
     return access_token
 def main():
+    global num1
+    global roundnum
+    global totalroundnum
     fo = open(path, "r+")
     refresh_token = fo.read()
     fo.close()
