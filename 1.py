@@ -100,10 +100,10 @@ def main():
         pass
 for _ in range(totalroundnum):
     roundnum+=1
-    print('\n===================== START ( '+str(roundnum)+' / '+str(totalroundnum)+' ) =====================')
+    print('\n=============== START ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ===============')
     main()
-    print('-------------------------')
+    print('------ Summary ------')
     print('Success: '+str(num2))
     print('Total success: '+str(num1))
     print('Current time of server: ', localtime+'')
-    print('====================== END ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ======================\n')
+    print('=============== END ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ===============\n')
