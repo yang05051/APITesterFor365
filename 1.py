@@ -14,6 +14,7 @@ import json,sys,time
 
 path=sys.path[0]+r'/1.txt'
 num1 = 0
+num2 = 0
 roundnum = 0
 totalroundnum = 100
 
@@ -38,8 +39,10 @@ def main():
     refresh_token = fo.read()
     fo.close()
     global num1
+    global num2
     global roundnum
     global totalroundnum
+    num2 = 0
     localtime = time.asctime( time.localtime(time.time()) )
     access_token=gettoken(refresh_token)
     headers={
@@ -88,6 +91,7 @@ for _ in range(totalroundnum):
     print('\n=========== START ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ===========')
     main()
     print('---------------')
+    print('Success: '+str(num2))
+    print('Total success: '+str(num1))
     print('Current time of server: ', localtime+'')
-    print('Total Success: '+str(num1))
     print('============ END ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ============\n')
