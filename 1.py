@@ -42,6 +42,7 @@ def main():
     global num2
     global roundnum
     global totalroundnum
+    global localtime
     num2 = 0
     localtime = time.asctime( time.localtime(time.time()) )
     access_token=gettoken(refresh_token)
