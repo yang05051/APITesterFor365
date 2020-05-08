@@ -76,7 +76,7 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('API 10 - Success [Total success: '+str(num1)+']')
-            print('Done. Current time: ', localtime)
+            print('--- End --- \nCurrent time: ', localtime)
     except:
         print("pass")
         pass
