@@ -160,6 +160,6 @@ for _ in range(totalroundnum):
     main()
     print('----- Summary -----')
     print('Total success: '+str(num1))
-    print('Total success: '+str(totalfailnum))
+    print('Total failure: '+str(totalfailnum))
     print('-------------------')
     print('===================== END ( '+str(roundnum)+' / '+str(totalroundnum)+' ) =====================\n')
