@@ -54,71 +54,71 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 1 - Success')
+            print('graph.microsoft.com/v1.0/me/drive/root - Success')
         else:
-            print('API 1 - Failure')
+            print('graph.microsoft.com/v1.0/me/drive/root - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 2 - Success')
+            print('graph.microsoft.com/v1.0/me/drive - Success')
         else:
-            print('API 2 - Failure')
+            print('graph.microsoft.com/v1.0/me/drive - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 3 - Success')
+            print('graph.microsoft.com/v1.0/drive/root - Success')
         else:
-            print('API 3 - Failure')
+            print('graph.microsoft.com/v1.0/drive/root - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 4 - Success')
+            print('graph.microsoft.com/v1.0/users - Success')
         else:
-            print('API 4 - Failure')
+            print('graph.microsoft.com/v1.0/users - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 5 - Success')  
+            print('graph.microsoft.com/v1.0/me/messages - Success')  
         else:
-            print('API 5 - Failure')  
+            print('graph.microsoft.com/v1.0/me/messages - Failure')  
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 6 - Success')   
+            print('graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules - Success')   
         else:
-            print('API 6 - Failure') 
-        if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
+            print('graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules - Failure') 
+        if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 7 - Success')
+            print('graph.microsoft.com/v1.0/me/mailFolders/inbox - Success')
         else:
-            print('API 7 - Failure')
+            print('graph.microsoft.com/v1.0/me/mailFolders/inbox - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 8 - Success')
+            print('graph.microsoft.com/v1.0/me/drive/root/children - Success')
         else:
-            print('API 8 - Failure')
+            print('graph.microsoft.com/v1.0/me/drive/root/children - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 9 - Success')
+            print('graph.microsoft.com/v1.0/me/mailFolders - Success')
         else:
-            print('API 9 - Failure')
+            print('graph.microsoft.com/v1.0/me/mailFolders - Failure')
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 10 - Success')
+            print('graph.microsoft.com/v1.0/me/outlook/masterCategories - Success')
         else:
-            print('API 10 - Failure')
+            print('graph.microsoft.com/v1.0/me/outlook/masterCategories - Failure')
         if req.get(r'https://api.powerbi.com/v1.0/myorg/apps',headers=headers).status_code == 200:
             num1+=1
             num2+=1
-            print('API 11 - Success') 
+            print('api.powerbi.com/v1.0/myorg/apps - Success') 
         else:
-            print('API 11 - Failure')
+            print('api.powerbi.com/v1.0/myorg/apps - Failure')
     except:
-        print("Pass")
+        print(':( Something went wrong.')
         pass
 for _ in range(totalroundnum):
     roundnum+=1
