@@ -155,10 +155,12 @@ def main():
         print('-- Failure: '+str(failnum))
 for _ in range(totalroundnum):
     roundnum += 1
-    print('\n')
+    print('')
     print(str(roundnum)+' / '+str(totalroundnum))
+    print('----------')
     main()
+    print('----------')
     print('Total success: '+str(num1))
     print('Total failure: '+str(totalfailnum))
-    print('-- Current time of server: ', localtime+'')
-    print('\n')
+    print('Current time of server: ', localtime+'')
+    print('')
