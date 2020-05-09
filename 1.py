@@ -121,13 +121,6 @@ def main():
             print('Success ['+str(api10)+'] - graph.microsoft.com/v1.0/me/outlook/masterCategories')
         else:
             print('Failure ['+str(api10)+'] - graph.microsoft.com/v1.0/me/outlook/masterCategories')
-        api11 = req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code
-        if api11 == 200:
-            num1+=1
-            num2+=1
-            print('Success ['+str(api11)+'] - api.powerbi.com/v1.0/myorg/groups') 
-        else:
-            print('Failure ['+str(api11)+'] - api.powerbi.com/v1.0/myorg/groups')
     except:
         print(':( Something went wrong.')
         pass
