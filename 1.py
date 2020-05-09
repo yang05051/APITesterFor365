@@ -116,7 +116,7 @@ def main():
             num2+=1
             print('Success - api.powerbi.com/v1.0/myorg/groups') 
         else:
-            print('Failure - api.powerbi.com/v1.0/myorg/groups')
+            print('Failure - api.powerbi.com/v1.0/myorg/groups [Status code: '+str(req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code)+']')
     except:
         print(':( Something went wrong.')
         pass
