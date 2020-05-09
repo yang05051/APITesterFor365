@@ -51,72 +51,83 @@ def main():
     'Content-Type':'application/json'
     }
     try:
-        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
+        api1 = req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code
+        if api1 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/drive/root')
+            print('Success ['+str(api1)+'] - graph.microsoft.com/v1.0/me/drive/root')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/drive/root')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code == 200:
+            print('Failure ['+str(api1).status_code)+'] - graph.microsoft.com/v1.0/me/drive/root')
+        api2 = req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code
+        if api2 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/drive')
+            print('Success ['+str(api2)+'] - graph.microsoft.com/v1.0/me/drive')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/drive')
-        if req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code == 200:
+            print('Failure ['+str(api2).status_code)+'] - graph.microsoft.com/v1.0/me/drive')
+        api3 = req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code
+        if api3 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/drive/root')
+            print('Success ['+str(api3).status_code)+'] - graph.microsoft.com/v1.0/drive/root')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/drive/root')
-        if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
+            print('Failure ['+str(api3)+'] - graph.microsoft.com/v1.0/drive/root')
+        api4 = req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code
+        if api4 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/users')
+            print('Success ['+str(api4)+'] - graph.microsoft.com/v1.0/users')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/users')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
+            print('Failure ['+str(api4).status_code)+'] - graph.microsoft.com/v1.0/users')
+        api5 = req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code
+        if api5 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/messages')  
+            print('Success ['+str(api5).status_code)+'] - graph.microsoft.com/v1.0/me/messages')  
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/messages')  
-        if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
+            print('Failure ['+str(api5).status_code)+'] - graph.microsoft.com/v1.0/me/messages')  
+        api6 = req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code
+        if api6 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules')   
+            print('Success ['+str(api6).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules')   
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules') 
-        if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox',headers=headers).status_code == 200:
+            print('Failure ['+str(api6).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules') 
+        api7 = req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox',headers=headers).status_code
+        if api7 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox')
+            print('Success ['+str(api7).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
+            print('Failure ['+str(api7).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox')
+        api8 = req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code
+        if api8 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/drive/root/children')
+            print('Success ['+str(api8)+'] - graph.microsoft.com/v1.0/me/drive/root/children')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/drive/root/children')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
+            print('Failure ['+str(api8)+'] - graph.microsoft.com/v1.0/me/drive/root/children')
+        api9 = req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code
+        if api9 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders')
+            print('Success ['+str(api9)+'] - graph.microsoft.com/v1.0/me/mailFolders')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/mailFolders')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
+            print('Failure ['+str(api9)+'] - graph.microsoft.com/v1.0/me/mailFolders')
+        api10 = req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code
+        if api10 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/outlook/masterCategories')
+            print('Success ['+str(api10)+'] - graph.microsoft.com/v1.0/me/outlook/masterCategories')
         else:
-            print('Failure ['+str(req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code)+'] - graph.microsoft.com/v1.0/me/outlook/masterCategories')
-        if req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code == 200:
+            print('Failure ['+str(api10)+'] - graph.microsoft.com/v1.0/me/outlook/masterCategories')
+        api11 = req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code
+        if api11 == 200:
             num1+=1
             num2+=1
-            print('Success ['+str(req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code)+'] - api.powerbi.com/v1.0/myorg/groups') 
+            print('Success ['+str(api11)+'] - api.powerbi.com/v1.0/myorg/groups') 
         else:
-            print('Failure ['+str(req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code)+'] - api.powerbi.com/v1.0/myorg/groups [Status code: '+str(req.get(r'https://api.powerbi.com/v1.0/myorg/groups',headers=headers).status_code)+']')
+            print('Failure ['+str(api11)+'] - api.powerbi.com/v1.0/myorg/groups')
     except:
         print(':( Something went wrong.')
         pass
