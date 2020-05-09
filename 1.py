@@ -151,15 +151,14 @@ def main():
         pass
     else:
         print(':D Test completed.')
-        print('Success: '+str(num2))
-        print('Failure: '+str(failnum))
-        print('Current time of server: ', localtime+'')
+        print('-- Success: '+str(num2))
+        print('-- Failure: '+str(failnum))
 for _ in range(totalroundnum):
     roundnum += 1
-    print('\n==================== START ( '+str(roundnum)+' / '+str(totalroundnum)+' ) ====================')
+    print('\n')
+    print(str(roundnum)+' / '+str(totalroundnum))
     main()
-    print('------- SUMMARY -------')
     print('Total success: '+str(num1))
     print('Total failure: '+str(totalfailnum))
-    print('-----------------------')
-    print('===================== END ( '+str(roundnum)+' / '+str(totalroundnum)+' ) =====================\n')
+    print('-- Current time of server: ', localtime+'')
+    print('\n')
