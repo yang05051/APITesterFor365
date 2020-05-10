@@ -151,8 +151,6 @@ def main():
         pass
     else:
         print(':D Test completed.')
-        print('-- Success: '+str(num2))
-        print('-- Failure: '+str(failnum))
 for _ in range(totalroundnum):
     roundnum += 1
     print('')
@@ -160,7 +158,7 @@ for _ in range(totalroundnum):
     print('--------------------')
     main()
     print('--------------------')
-    print('Total success: '+str(num1))
-    print('Total failure: '+str(totalfailnum))
+    print('Success: '+str(num2)+' (Total: '+str(num1)+')')
+    print('Failure: '+str(failnum)+' (Total: '+str(totalfailnum)+')')
     print('Current time of server: ', localtime+'')
     print('')
