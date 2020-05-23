@@ -141,7 +141,10 @@ def main():
         print(':o Something went wrong.')
         pass
     else:
-        print(':D Test completed.')
+        if (failnum > 0) 
+            print(':p Test completed.')
+        else:
+            print(':D Test completed.')
 for _ in range(totalroundnum):
     roundnum += 1
     print('')
