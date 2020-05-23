@@ -141,7 +141,7 @@ def main():
         print(':o Something went wrong.')
         pass
     else:
-        if (failnum > 0) 
+        if failnum > 0:
             print(':p Test completed.')
         else:
             print(':D Test completed.')
