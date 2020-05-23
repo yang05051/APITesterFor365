@@ -1,5 +1,5 @@
-#自动调用api保活，加密版
-name: Auto Api Secret
+#AutoAPISecret
+name: Test APIs
 
 on: 
   release:
