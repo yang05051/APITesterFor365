@@ -11,6 +11,7 @@ totalroundnum = 100
 failnum = 0
 totalfailnum = 0
 
+
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
             }
@@ -27,6 +28,7 @@ def gettoken(refresh_token):
     with open(path, 'w+') as f:
         f.write(refresh_token)
     return access_token
+
 def main():
     fo = open(path, "r+")
     refresh_token = fo.read()
@@ -145,6 +147,7 @@ def main():
             print(':p Test completed.')
         else:
             print(':D Test completed.')
+            
 for _ in range(totalroundnum):
     roundnum += 1
     print('')
