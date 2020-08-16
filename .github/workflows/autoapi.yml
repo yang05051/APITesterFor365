@@ -16,6 +16,7 @@ on:
    
 jobs:
   build:
+    name: Runs
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
     steps:
