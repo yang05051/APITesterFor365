@@ -1,4 +1,5 @@
-# AutoAPISecret
+# APITesterFor365
+## API Tester for Microsoft 365
 
  **Original project** 
  
