@@ -7,7 +7,7 @@ path=sys.path[0]+r'/1.txt'
 num1 = 0
 num2 = 0
 roundnum = 0
-totalroundnum = 100
+totalroundnum = 10
 failnum = 0
 totalfailnum = 0
 
@@ -103,13 +103,13 @@ def main():
             print(':o Failure ['+str(api6)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules') 
             failnum += 1
             totalfailnum += 1
-        api7 = req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox',headers=headers).status_code
+        api7 = req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages/delta',headers=headers).status_code
         if api7 == 200:
             num1+=1
             num2+=1
-            print(':) Success ['+str(api7)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox')
+            print(':) Success ['+str(api7)+'] - graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages/delta')
         else:
-            print(':o Failure ['+str(api7)+'] - graph.microsoft.com/v1.0/me/mailFolders/inbox')
+            print(':o Failure ['+str(api7)+'] - graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages/delta')
             failnum += 1
             totalfailnum += 1
         api8 = req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code
