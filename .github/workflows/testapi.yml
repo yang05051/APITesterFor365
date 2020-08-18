@@ -2,15 +2,11 @@
 name: Test APIs
 
 on: 
-  release:
-    types: [published]
   push:
-    tags:
-    - 'v*'
-  #  branches: 
-  #    - master
+    branches: 
+    - master
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: 0 */1 * * *
   watch:
     types: [started]
    
