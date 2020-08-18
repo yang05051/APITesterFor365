@@ -26,7 +26,7 @@ jobs:
     - name: Install requests
       run: |
         pip install requests
-    - name: Read config from secrets
+    - name: Import secrets
       env: 
         CONFIG_ID: ${{ secrets.CONFIG_ID }}
         CONFIG_KEY: ${{ secrets.CONFIG_KEY }}
@@ -40,7 +40,7 @@ jobs:
       run: | 
         echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
         python 2.py
-    - name: Delete secrets config
+    - name: Remove secret configurations
       run: | 
         rm -f 2.py
         rm -f configid.txt
