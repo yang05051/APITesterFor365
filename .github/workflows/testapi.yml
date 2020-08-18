@@ -9,7 +9,7 @@ on:
     - cron: 0 */1 * * *
   watch:
     types: started
-  repository_dispatch:
+  workflow_dispatch:
    
 jobs:
   build:
