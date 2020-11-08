@@ -157,5 +157,5 @@ for _ in range(totalroundnum):
     print('--------------------')
     print('Success: '+str(num2)+' (Total: '+str(num1)+')')
     print('Failure: '+str(failnum)+' (Total: '+str(totalfailnum)+')')
-    print('Current time of server: ', localtime+'')
+    print('Server time: ', localtime+'')
     print('')
