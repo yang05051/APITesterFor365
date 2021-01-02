@@ -18,9 +18,9 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: Set up Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@main
       with:
         python-version: 3.8
     - name: Install requests
