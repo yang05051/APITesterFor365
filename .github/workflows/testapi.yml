@@ -8,7 +8,7 @@ on:
   watch:
     types: started
   workflow_dispatch:
-  repository_dispatch:
+  # repository_dispatch:
    
 jobs:
   build:
