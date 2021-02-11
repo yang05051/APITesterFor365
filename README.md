@@ -1,4 +1,4 @@
- # APITesterFor365_Old
+ # APITesterFor365 (Deprecated)
 
 ![Test APIs](https://github.com/yang05051/APITesterFor365/workflows/Test%20APIs/badge.svg)
 
